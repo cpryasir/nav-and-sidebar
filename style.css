@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    font-family: 'poppins' sans-serif;
+}
+
+.navbar-main{
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
+    z-index:  999;
+}
+
+.navbar{
+    display: flex;
+    align-items:  center;
+    justify-content: space-between;
+    max-width: 95%;
+    margin: auto;
+    height: 90px;
+}
+
+.left-nav{
+    display: flex;
+    align-items: center;
+}
+
+.left-nav .sidebar-btn-box{
+    margin-right: 3rem;
+    cursor: pointer;
+    color: #999999;
+}
+
+.left-nav .sidebar-btn-box i{
+    font-size: 24px;
+}
+
+.left-nav .search-box{
+    background: #D9D9D9;
+    background: #f8f8f8;
+    height: 38px;
+    border-radius: 30px;
+    overflow: hidden;
+
+}
+
+.left-nav .search-box input{
+    height: 100%;
+    padding: 0 15px;
+    padding-right: 0px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #3A3A3A;
+    width: 170px;
+}
+
+.search-btn{
+    height: 100%;
+    padding: 5px;
+    background: transparent;
+    border: none;
+    padding-right: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #B8B8B8;
+}
+
+
+
+.right-nav{
+    display: flex;
+    gap: 20px;
+}
+
+.right-nav .right-icon-box{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.right-nav .right-icon-box a i{
+    font-size: 20px;
+    color: #999999;
+    transition: ease-in-out 0.5s;
+}
+
+.right-nav .right-icon-box a i:hover{
+    color: #6FB327;
+}
+
+.nav-user-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nav-user-box p{
+    font-size: 13px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .navbar{
+        height: 70px;
+    }
+    .left-nav .search-box input{
+        display: none;
+    }
+
+    .left-nav .search-box{
+        background: transparent;
+    }
+
+    .d-none{
+        display: none;
+    }
+
+    .right-nav{
+        gap: 0;
+    }
+
+    .nav-logo-box img{
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+/* -------------------------Sidebar------------------------- */
+
+.side-main{
+    width: 100px;
+    height: 86vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    left: -300px;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.side-main::-webkit-scrollbar {
+    width: 5px;
+}
+
+.side-main::-webkit-scrollbar-thumb {
+    background: rgb(219, 219, 219); 
+    border-radius: 10px;
+}
+.side-main::-webkit-scrollbar-thumb:hover {
+    background: rgb(194, 194, 194); 
+  }
+
+
+.side-icons{
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 15px;
+}
+
+.side-icons a{
+    color: #3A3A3A;
+    text-decoration: none;
+}
+
+.side-icons a:hover .side-icon-links, .side-icons a:hover .side-icon-links i{
+    color: #6FB327;
+    transition: ease-in-out 0.5s;
+}
+
+.icon-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.icon-box i{
+    font-size: 34px;
+    color: #999999;
+}
+
+.side-icon-links p{
+    font-size: 13px;
+    text-align: center;
+}
