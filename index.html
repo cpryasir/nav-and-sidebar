@@ -50,128 +50,318 @@
     <!-- ------------------------------- Side Bar ---------------------------- -->
 
 
-    <div class="side-main" id="sidebarMain">
-        <div class="sidebar">
-            <div class="side-icons">
-                <a href="#">
-                    <div class="side-icon-links">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-tv"></i>
+    <div class="side-main-box">
+        <div class="side-main" id="sidebarMain">
+            <div class="sidebar">
+                <div class="side-icons" onclick="showDash();">
+                        <div class="side-icon-links">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-tv"></i>
+                            </div>
+                            <p>DashBoard</p>
                         </div>
-                        <p>DashBoard</p>
+                </div>
+    
+                <div class="side-icons" onclick="showDeals();">
+                        <div class="side-icon-links">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-cubes"></i>
+                            </div>
+                            <p>Deals</p>
+                        </div>
+                </div>
+    
+                <div class="side-icons" onclick="showLeads();">
+                        <div class="side-icon-links">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-user-plus"></i>
+                            </div>
+                            <p>Leads</p>
+                        </div>
+                </div>
+    
+                <div class="side-icons" onclick="showClients();">
+                        <div class="side-icon-links">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <p>Clients</p>
+                        </div>
+                </div>
+    
+                <div class="side-icons" onclick="showDrop();">
+                        <div class="side-icon-links">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>Dropped</p>
+                        </div>
+                </div>
+    
+                <div class="side-icons">
+                        <div class="side-icon-links">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-gift"></i>
+                            </div>
+                            <p>Products</p>
+                        </div>
+                </div>
+    
+                <div class="side-icons">
+                        <div class="side-icon-links">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                            </div>
+                            <p>Automation</p>
+                        </div>
+                </div>
+    
+                <div class="side-icons">
+                        <div class="side-icon-links">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-plug"></i>
+                            </div>
+                            <p>Intigrations</p>
+                        </div>
+                </div>
+    
+                <div class="side-icons">
+                        <div class="side-icon-links">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-user-group"></i>
+                            </div>
+                            <p>Users</p>
+                        </div>
+                </div>
+    
+                <div class="side-icons">
+                        <div class="side-icon-links">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-gear"></i>
+                            </div>
+                            <p>Settings</p>
+                        </div>
+                </div>
+    
+                <div class="side-icons">
+                        <div class="side-icon-links">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-shield-heart"></i>
+                            </div>
+                            <p>My Account</p>
+                        </div>
+                </div>
+            </div>    
+        </div>
+
+
+
+        <div class="sub-side-main" id="sideMain">
+            <div class="dashboard-manu-box side-menu-main" id="dashBoard">
+                <div class="dashboard-menu side-menu">
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-solid fa-coins"></i>
+                                <p>Sales</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
+                    
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-regular fa-file"></i>
+                                <p>Follow-ups</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                <p>Calls</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-solid fa-stopwatch"></i>
+                                <p>Tasks</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-solid fa-list-check"></i>
+                                <p>Day report</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>User location</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-solid fa-file-contract"></i>
+                                <p>Reports</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="side-icons">
-                <a href="#">
-                    <div class="side-icon-links">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-cubes"></i>
-                        </div>
-                        <p>Deals</p>
+
+            <!-- Deals Sub Sidebar -->
+
+        <div class="sub-side-main" id="dealsMain">
+            <div class="dashboard-manu-box side-menu-main" id="deals">
+                <div class="deals-menu side-menu">
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-solid fa-cubes"></i>
+                                <p>Active Deals</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-
-            <div class="side-icons">
-                <a href="#">
-                    <div class="side-icon-links">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-user-plus"></i>
-                        </div>
-                        <p>Leads</p>
+                    
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-solid fa-bullseye"></i>
+                                <p>Sales target</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-
-            <div class="side-icons">
-                <a href="#">
-                    <div class="side-icon-links">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-users"></i>
-                        </div>
-                        <p>Clients</p>
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-solid fa-file-contract"></i>
+                                <p>Reports</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
+        </div>
+ 
 
-            <div class="side-icons">
-                <a href="#">
-                    <div class="side-icon-links">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-                        <p>Dropped</p>
+            <!-- Leads Sub Sidebar -->
+
+        <div class="sub-side-main" id="leadsMain">
+            <div class="dashboard-manu-box side-menu-main" id="leads">
+                <div class="deals-menu side-menu">
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <p>Summary</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-
-            <div class="side-icons">
-                <a href="#">
-                    <div class="side-icon-links">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-gift"></i>
-                        </div>
-                        <p>Products</p>
+                    
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-solid fa-list-check"></i>
+                                <p>Lead list</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-
-            <div class="side-icons">
-                <a href="#">
-                    <div class="side-icon-links">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-clock-rotate-left"></i>
-                        </div>
-                        <p>Automation</p>
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-solid fa-file-contract"></i>
+                                <p>Reports</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
+        </div>
+ 
 
-            <div class="side-icons">
-                <a href="#">
-                    <div class="side-icon-links">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-plug"></i>
-                        </div>
-                        <p>Intigrations</p>
+            <!-- Clients Sub Sidebar -->
+
+        <div class="sub-side-main" id="clietsMain">
+            <div class="dashboard-manu-box side-menu-main" id="clients">
+                <div class="deals-menu side-menu">
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <p>Summary</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-
-            <div class="side-icons">
-                <a href="#">
-                    <div class="side-icon-links">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-user-group"></i>
-                        </div>
-                        <p>Users</p>
+                    
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-solid fa-list-check"></i>
+                                <p>Client list</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-
-            <div class="side-icons">
-                <a href="#">
-                    <div class="side-icon-links">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-gear"></i>
-                        </div>
-                        <p>Settings</p>
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-solid fa-file-contract"></i>
+                                <p>Reports</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
+        </div>
+ 
 
-            <div class="side-icons">
-                <a href="#">
-                    <div class="side-icon-links">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-shield-heart"></i>
-                        </div>
-                        <p>My Account</p>
+            <!-- Dropped Sub Sidebar -->
+
+        <div class="sub-side-main" id="dropMain">
+            <div class="dashboard-manu-box side-menu-main" id="drop">
+                <div class="deals-menu side-menu">
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <p>Summary</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
+                    
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-solid fa-list-check"></i>
+                                <p>Dropped leads</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="side-menu-items">
+                        <a href="#">
+                            <div class="side-menu-items-link">
+                                <i class="fa-solid fa-file-contract"></i>
+                                <p>Reports</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
+        </div>
+ 
+
+        </div>
 
 
 
@@ -180,6 +370,13 @@
 
 
 
+
+    </div>
+    
+
+    <div class="main-content">
+        <div class="content">
+            <h1>Bytepaper</h1>
         </div>
     </div>
 
