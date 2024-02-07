@@ -34,18 +34,73 @@
             <div class="right-nav">
                 <div class="right-icon-box">
                     <a href="#"><i class="fa fa-comment d-none"></i></i></a>
-                    <a href="#"><i class="fa fa-plus-circle d-none"></i></i></a>
+                    <i class="fa fa-plus-circle d-none" id="navPlusIcon" onclick="showNavPlusHidden();"></i>
                     <a href="#"><i class="fa fa-calendar"></i></a>
                     <a href="#"><i class="fa fa-arrows-alt d-none"></i></a>
                 </div>
 
-                <div class="nav-user-box">
+                <div class="nav-user-box" onclick="showProfileHidden()">
                     <p>User</p>
                     <img src="user.png" alt="">
                 </div>
             </div>
         </div>
     </div>
+
+        <div class="nav-plus-hidden-items" id="navPlusHidden">
+            <div class="plus-hidden-items">
+                <div class="icon-text-box">
+                    <a href="#">
+                        <div class="nav-hidden-icon-link">
+                            <i class="fa-solid fa-user-plus"></i>
+                            <p>Leads</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="icon-text-box">
+                    <a href="#">
+                        <div class="nav-hidden-icon-link">
+                            <i class="fa-solid fa-users"></i>
+                            <p>Clients</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="icon-text-box">
+                    <a href="#">
+                        <div class="nav-hidden-icon-link">
+                            <i class="fa-solid fa-cubes"></i>
+                            <p>Deals</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="icon-text-box">
+                    <a href="#">
+                        <div class="nav-hidden-icon-link">
+                            <i class="fa-solid fa-gift"></i>
+                            <p>Products</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="icon-text-box">
+                    <a href="#">
+                        <div class="nav-hidden-icon-link">
+                            <i class="fa-solid fa-user-group"></i>
+                            <p>Users</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="icon-text-box">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-hidden-box" id="profileHiddenBox">
+            <div class="profile-hidden">
+                <a href="#"><p>Profile</p></a>
+                <a href="#"><p>Sign Out</p></a>
+            </div>
+        </div>
 
     
     <!-- ------------------------------- Side Bar ---------------------------- -->
@@ -126,7 +181,7 @@
                         </div>
                 </div>
     
-                <div class="side-icons">
+                <div class="side-icons" onclick="showUsers();">
                         <div class="side-icon-links">
                             <div class="icon-box">
                                 <i class="fa-solid fa-user-group"></i>
@@ -135,7 +190,7 @@
                         </div>
                 </div>
     
-                <div class="side-icons">
+                <div class="side-icons" onclick="showSettings();">
                         <div class="side-icon-links">
                             <div class="icon-box">
                                 <i class="fa-solid fa-gear"></i>
@@ -452,6 +507,171 @@
                 </div>
             </div>
         </div>
+
+
+        
+            <!-- Deals Sub Sidebar -->
+
+            <div class="sub-side-main" id="dealsMain">
+                <div class="dashboard-manu-box side-menu-main" id="deals">
+                    <div class="deals-menu side-menu">
+                        <div class="side-menu-items">
+                            <a href="#">
+                                <div class="side-menu-items-link">
+                                    <i class="fa-solid fa-cubes"></i>
+                                    <p>Active Deals</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="side-menu-items">
+                            <a href="#">
+                                <div class="side-menu-items-link">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                    <p>Sales target</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="side-menu-items">
+                            <a href="#">
+                                <div class="side-menu-items-link">
+                                    <i class="fa-solid fa-file-contract"></i>
+                                    <p>Reports</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     
+    
+                <!-- Users Sub Sidebar -->
+    
+            <div class="sub-side-main" id="usersMain">
+                <div class="dashboard-manu-box side-menu-main" id="users">
+                    <div class="deals-menu side-menu">
+                        <div class="side-menu-items">
+                            <a href="#">
+                                <div class="side-menu-items-link">
+                                    <i class="fa-solid fa-user-group"></i>
+                                    <p>Active</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="side-menu-items">
+                            <a href="#">
+                                <div class="side-menu-items-link">
+                                    <i class="fa-solid fa-users"></i>
+                                    <p>Team</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="side-menu-items">
+                            <a href="#">
+                                <div class="side-menu-items-link">
+                                    <i class="fa-regular fa-circle-user"></i>
+                                    <p>Blocked</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     
+    
+    
+                <!-- Users Sub Sidebar -->
+    
+            <div class="sub-side-main" id="settingsMain">
+                <div class="dashboard-manu-box side-menu-main" id="settings">
+                    <div class="deals-menu side-menu">
+                        <div class="side-menu-items">
+                            <a href="#">
+                                <div class="side-menu-items-link">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p>City</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="side-menu-items">
+                            <a href="#">
+                                <div class="side-menu-items-link">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <p>Client Stages</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="side-menu-items">
+                            <a href="#">
+                                <div class="side-menu-items-link">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p>Country</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="side-menu-items">
+                            <a href="#">
+                                <div class="side-menu-items-link">
+                                    <i class="fa-solid fa-wrench"></i>
+                                    <p>Custom Fields</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="side-menu-items">
+                            <a href="#">
+                                <div class="side-menu-items-link">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <p>Deal Stages</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="side-menu-items">
+                            <a href="#">
+                                <div class="side-menu-items-link">
+                                    <i class="fa-solid fa-campground"></i>
+                                    <p>Deals Pipeline</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="side-menu-items">
+                            <a href="#">
+                                <div class="side-menu-items-link">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <p>Deal lost reasons</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="side-menu-items">
+                            <a href="#">
+                                <div class="side-menu-items-link">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <p>Drop reasons</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="side-menu-items">
+                            <a href="#">
+                                <div class="side-menu-items-link">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <p>Follow-up type</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="side-menu-items">
+                            <a href="#">
+                                <div class="side-menu-items-link">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <p>Holiday calender</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     
+    
  
 
         </div>

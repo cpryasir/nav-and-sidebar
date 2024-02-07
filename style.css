@@ -11,7 +11,7 @@ body{
 
 .navbar-main{
     box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04), 0 1px 6px rgba(0, 0, 0, 0.04);
-    z-index:  1;
+    z-index:  4;
     position: fixed;
     width: 100%;
     background: #fff;
@@ -107,6 +107,101 @@ body{
     font-size: 13px;
 }
 
+/* -------- Hidden --------- */
+
+#navPlusIcon{
+    cursor: pointer;
+    transition: 0.4s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #999999;
+    font-size: 20px;
+}
+
+#navPlusIcon:hover{
+    color: #6FB327;
+}
+
+.nav-plus-hidden-items{
+    border: 1px solid #D9D9D9;
+    margin-top: 90px;
+    position: fixed;
+    right: 220px;
+    /* top: 90px; */
+    background: #fff;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.07), 0 1px 6px rgba(0, 0, 0, 0.07);
+    display: none;
+}
+
+.plus-hidden-items{
+    width: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.icon-text-box{
+    width: 45%;
+}
+
+.nav-hidden-icon-link{
+    text-align: center;
+    color: #999999;
+    margin: 10px 0;
+}
+
+.nav-hidden-icon-link i{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.nav-hidden-icon-link p{
+    font-size: 13px;
+}
+
+.icon-text-box a{
+    text-decoration: none;
+}
+
+.icon-text-box a:hover .nav-hidden-icon-link{
+    color: #6FB327;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.profile-hidden-box{
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    padding: 10px 15px;
+    width: 130px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.07), 0 1px 6px rgba(0, 0, 0, 0.07);
+    border: 1px solid #D9D9D9;
+    display: none;
+}
+
+.profile-hidden a{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #999999;
+    font-size: 13px;
+}
+
+.profile-hidden a:hover{
+    color: #6FB327;
+}
+
+.profile-hidden p{
+    margin: 10px 0;
+}
+
+/* ------------- Nav Media --------------------- */
+
 @media screen and (max-width: 700px) {
 
     .navbar{
@@ -150,6 +245,7 @@ body{
     background: #fff;
     position: fixed;
     border-top-right-radius: 10px;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.1), 0 3px 20px rgba(0, 0, 0, 0.1);
 }
 
 .side-main::-webkit-scrollbar {
@@ -296,7 +392,7 @@ body{
 }
 
 
-
+/* ----- */
 
 
 

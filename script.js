@@ -6,6 +6,8 @@ const leadsMain = document.getElementById("leadsMain");
 const clietsMain = document.getElementById("clietsMain");
 const dropMain = document.getElementById("dropMain");
 const automationMain = document.getElementById("automationMain");
+const usersMain = document.getElementById("usersMain");
+const settingsMain = document.getElementById("settingsMain");
 
     function showSide(){
         if (sidebarMain.style.left == "0px"){
@@ -16,6 +18,8 @@ const automationMain = document.getElementById("automationMain");
             clietsMain.style.left = "-300px";
             dropMain.style.left = "-300px";
             automationMain.style.left = "-300px";
+            usersMain.style.left = "-300px";
+            settingsMain.style.left = "-300px";
         }
         else{
             sidebarMain.style.left = "0px";
@@ -35,6 +39,8 @@ const automationMain = document.getElementById("automationMain");
             clietsMain.style.left = "-300px";
             dropMain.style.left = "-300px";
             automationMain.style.left = "-300px";
+            usersMain.style.left = "-300px";
+            settingsMain.style.left = "-300px";
         }
     }
 
@@ -49,6 +55,8 @@ const automationMain = document.getElementById("automationMain");
             clietsMain.style.left = "-300px";
             dropMain.style.left = "-300px";
             automationMain.style.left = "-300px";
+            usersMain.style.left = "-300px";
+            settingsMain.style.left = "-300px";
         }
     }
 
@@ -63,6 +71,8 @@ const automationMain = document.getElementById("automationMain");
             clietsMain.style.left = "-300px";
             dropMain.style.left = "-300px";
             automationMain.style.left = "-300px";
+            usersMain.style.left = "-300px";
+            settingsMain.style.left = "-300px";
         }
     }
 
@@ -77,6 +87,8 @@ const automationMain = document.getElementById("automationMain");
             sideMain.style.left = "-300px";
             dropMain.style.left = "-300px";
             automationMain.style.left = "-300px";
+            usersMain.style.left = "-300px";
+            settingsMain.style.left = "-300px";
         }
     }
 
@@ -91,6 +103,8 @@ const automationMain = document.getElementById("automationMain");
             dealsMain.style.left = "-300px";
             sideMain.style.left = "-300px";
             automationMain.style.left = "-300px";
+            usersMain.style.left = "-300px";
+            settingsMain.style.left = "-300px";
         }
     }
 
@@ -105,6 +119,40 @@ const automationMain = document.getElementById("automationMain");
             dealsMain.style.left = "-300px";
             sideMain.style.left = "-300px";
             dropMain.style.left = "-300px";
+            usersMain.style.left = "-300px";
+            settingsMain.style.left = "-300px";
+        }
+    }
+
+    function showUsers(){
+        if (usersMain.style.left == "80px"){
+            usersMain.style.left = "-300px";
+        }
+        else{
+            usersMain.style.left = "80px";
+            clietsMain.style.left = "-300px";
+            leadsMain.style.left = "-300px";
+            dealsMain.style.left = "-300px";
+            sideMain.style.left = "-300px";
+            dropMain.style.left = "-300px";
+            automationMain.style.left = "-300px";
+            settingsMain.style.left = "-300px";
+        }
+    }
+
+    function showSettings(){
+        if (settingsMain.style.left == "80px"){
+            settingsMain.style.left = "-300px";
+        }
+        else{
+            settingsMain.style.left = "80px";
+            clietsMain.style.left = "-300px";
+            leadsMain.style.left = "-300px";
+            dealsMain.style.left = "-300px";
+            sideMain.style.left = "-300px";
+            dropMain.style.left = "-300px";
+            automationMain.style.left = "-300px";
+            usersMain.style.left = "-300px";
         }
     }
 
@@ -148,6 +196,28 @@ const rotateIcon = document.getElementById("rotateIcon");
     }
 
 
+const navPlusHidden = document.getElementById("navPlusHidden");
 
+    function showNavPlusHidden(){
+        if (navPlusHidden.style.display == "block"){
+            navPlusHidden.style.display = "none";
+        }
+        else{
+            navPlusHidden.style.display = "block";
+            profileHiddenBox.style.display = "none";
+        }
+    }
+
+const profileHiddenBox =  document.getElementById("profileHiddenBox");
+
+    function showProfileHidden(){
+        if (profileHiddenBox.style.display == "block"){
+            profileHiddenBox.style.display = "none";
+        }
+        else{
+            profileHiddenBox.style.display = "block";
+            navPlusHidden.style.display = "none";
+        }
+    }
     // showAutoHidden()
     showSide();
