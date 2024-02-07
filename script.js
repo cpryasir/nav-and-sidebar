@@ -5,6 +5,7 @@ const dealsMain = document.getElementById("dealsMain");
 const leadsMain = document.getElementById("leadsMain");
 const clietsMain = document.getElementById("clietsMain");
 const dropMain = document.getElementById("dropMain");
+const automationMain = document.getElementById("automationMain");
 
     function showSide(){
         if (sidebarMain.style.left == "0px"){
@@ -14,6 +15,7 @@ const dropMain = document.getElementById("dropMain");
             leadsMain.style.left = "-300px";
             clietsMain.style.left = "-300px";
             dropMain.style.left = "-300px";
+            automationMain.style.left = "-300px";
         }
         else{
             sidebarMain.style.left = "0px";
@@ -23,67 +25,86 @@ const dropMain = document.getElementById("dropMain");
 //Sub-Sidebar
 
     function showDash(){
-        if (sideMain.style.left == "100px"){
+        if (sideMain.style.left == "80px"){
             sideMain.style.left = "-300px";
         }
         else{
-            sideMain.style.left = "100px";
+            sideMain.style.left = "80px";
             dealsMain.style.left = "-300px";
             leadsMain.style.left = "-300px";
             clietsMain.style.left = "-300px";
             dropMain.style.left = "-300px";
+            automationMain.style.left = "-300px";
         }
     }
 
     function showDeals(){
-        if (dealsMain.style.left == "100px"){
+        if (dealsMain.style.left == "80px"){
             dealsMain.style.left = "-300px";
         }
         else{
-            dealsMain.style.left = "100px";
+            dealsMain.style.left = "80px";
             sideMain.style.left = "-300px";
             leadsMain.style.left = "-300px";
             clietsMain.style.left = "-300px";
             dropMain.style.left = "-300px";
+            automationMain.style.left = "-300px";
         }
     }
 
     function showLeads(){
-        if (leadsMain.style.left == "100px"){
+        if (leadsMain.style.left == "80px"){
             leadsMain.style.left = "-300px";
         }
         else{
-            leadsMain.style.left = "100px";
+            leadsMain.style.left = "80px";
             dealsMain.style.left = "-300px";
             sideMain.style.left = "-300px";
             clietsMain.style.left = "-300px";
             dropMain.style.left = "-300px";
+            automationMain.style.left = "-300px";
         }
     }
 
     function showClients(){
-        if (clietsMain.style.left == "100px"){
+        if (clietsMain.style.left == "80px"){
             clietsMain.style.left = "-300px";
         }
         else{
-            clietsMain.style.left = "100px";
+            clietsMain.style.left = "80px";
             leadsMain.style.left = "-300px";
             dealsMain.style.left = "-300px";
             sideMain.style.left = "-300px";
             dropMain.style.left = "-300px";
+            automationMain.style.left = "-300px";
         }
     }
 
     function showDrop(){
-        if (dropMain.style.left == "100px"){
+        if (dropMain.style.left == "80px"){
             dropMain.style.left = "-300px";
         }
         else{
-            dropMain.style.left = "100px";
+            dropMain.style.left = "80px";
             clietsMain.style.left = "-300px";
             leadsMain.style.left = "-300px";
             dealsMain.style.left = "-300px";
             sideMain.style.left = "-300px";
+            automationMain.style.left = "-300px";
+        }
+    }
+
+    function showAuto(){
+        if (automationMain.style.left == "80px"){
+            automationMain.style.left = "-300px";
+        }
+        else{
+            automationMain.style.left = "80px";
+            clietsMain.style.left = "-300px";
+            leadsMain.style.left = "-300px";
+            dealsMain.style.left = "-300px";
+            sideMain.style.left = "-300px";
+            dropMain.style.left = "-300px";
         }
     }
 
@@ -111,5 +132,22 @@ const dropMain = document.getElementById("dropMain");
         }
     }
 
-    
+
+const autoTempHiddenItems = document.getElementById("autoTempHiddenItems");
+const rotateIcon = document.getElementById("rotateIcon");
+
+    function showAutoHidden(){
+        if (autoTempHiddenItems.style.height == "0px"){
+            autoTempHiddenItems.style.height = "230px";
+            rotateIcon.style.transform = "rotate(90deg)";
+        }
+        else{
+            autoTempHiddenItems.style.height = "0px";
+            rotateIcon.style.transform = "rotate(0deg)";
+        }
+    }
+
+
+
+    // showAutoHidden()
     showSide();
